@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.vh-container{
+    height: 100vh;
+
+    background-color: #141922;
+}
+
+/* Assets */
+
+.inner-top{
+    display: flex;
+    flex-direction: row;
+}
+
+
+                         /* Navbar */
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+
+    width: 15%;
+
+    padding: 10px;
+
+    background-color: black;
+}
+
+.navbar .nav-top #logo{
+    max-width: 60%;
+
+    margin-bottom: 30px;
+}
+
+.navbar .nav-top .nav-links .img-link-container{
+    width: 20px;
+}
+
+.navbar .nav-top .nav-links .img-link-container img{
+    width: 100%;
+}
+
+.navbar .nav-top .nav-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-bottom: 15px;
+
+    list-style-type: none;
+}
+
+.navbar .nav-top .nav-links li a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+.navbar .nav-top .nav-links li a .link{
+    font-weight: 600;
+    font-size: 0.8em;
+}
+
+.navbar .nav-top #playlist-title{
+    font-weight: 600;
+    color: white;
+}
+
+
+
