@@ -188,6 +188,10 @@ body{
     font-weight: 600;
 }
 
+/* /Navbar */
+
+
+
 
 
 
@@ -201,6 +205,10 @@ body{
 
 
 
+
+
+
+
 /* Tool-bar */
 
 .tool-bar{
@@ -210,8 +218,194 @@ body{
 
     height: 90px;
 
+    color: white;
+
     background-color: #282828;
 }
+
+.tool-bar #tool-bar-left,
+.tool-bar #tool-bar-right{
+    width: 100%;
+    max-width: 220px;
+}
+
+.tool-bar #tool-bar-center{
+    width: 100%;
+    min-width: 230px;
+    max-width: 530px;
+}
+
+
+/* Toolbar-left */
+
+.tool-bar #tool-bar-left{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tool-bar #tool-bar-left .track-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+    width: 75%;
+
+    padding: 22px 11px;
+}
+
+.tool-bar #tool-bar-left .track-container img{
+    height: 100%;
+    max-width: 46px;
+}
+
+.tool-bar #tool-bar-left .track-text{
+    display: flex;
+    flex-direction: column;
+
+    font-size: 0.8em;
+    font-weight: 600;
+} 
+
+.tool-bar #tool-bar-left .track-text #track-name{
+    font-size: 0.8em;
+
+    opacity: .5;
+}
+
+.tool-bar #tool-bar-left .icons-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    width: 25%;
+}
+
+.tool-bar #tool-bar-left .icons-container i{
+    opacity: .5;
+
+    cursor: pointer;
+}
+/* /Toolbar-left */
+
+
+
+/* Toolbar-center */
+
+.tool-bar-center{
+    display: flex;
+    flex-direction: column;
+}
+
+#tool-bar-center .play-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 22px;
+
+    height: 60%;
+
+    font-size: 1.2em;
+}
+
+#tool-bar-center .play-bar i{
+    cursor: pointer;
+}
+
+#tool-bar-center .play-bar #play-btn{
+    padding: 0 12px;
+    font-size: 1.6em;
+}
+
+#tool-bar-center .time-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 20%;
+
+    font-size:0.6em;
+}
+
+#tool-bar-center .time-bar .time-line-container{
+    width: 80%;
+}
+
+#tool-bar-center .time-bar .time-line-container .time-line{
+    height: 4px;
+
+    border-radius: 2px;
+
+    background-color: #5a5a5a;
+}
+
+#tool-bar-center .time-bar .time-line-container .time-line .current-time-line{
+    height: 4px;
+    width: 15%;
+
+    border-radius: 2px;
+
+    background-color: white;
+}
+
+/* /Toolbar center */
+
+
+/* Toolbar right */
+
+#tool-bar-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+
+    padding: 0 10px;
+}
+
+#tool-bar-right i{
+    cursor: pointer;
+
+    font-size: 0.8em;
+}
+
+#tool-bar-right .time-line-container{
+    width: 60%;
+}
+
+#tool-bar-right .time-line-container .time-line{
+    height: 4px;
+
+    border-radius: 2px;
+
+    background-color: #5a5a5a;
+}
+
+#tool-bar-right .time-line-container .time-line .current-time-line{
+    height: 4px;
+    width: 40%;
+
+    border-radius: 2px;
+
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
