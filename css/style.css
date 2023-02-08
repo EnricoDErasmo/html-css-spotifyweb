@@ -8,7 +8,8 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.vh-container{
+#ui{
+    width: 100vw;
     height: 100vh;
 
     background-color: #141922;
@@ -19,6 +20,8 @@ body{
 .inner-top{
     display: flex;
     flex-direction: row;
+
+    height: calc(100% - 90px);
 }
 
 
@@ -27,8 +30,9 @@ body{
 .navbar{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 
-    width: 15%;
+    width: 200px;
 
     padding: 10px;
 
@@ -36,9 +40,9 @@ body{
 }
 
 .navbar .nav-top #logo{
-    max-width: 60%;
+    width: 70%;
 
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .navbar .nav-top .nav-links .img-link-container{
@@ -47,6 +51,8 @@ body{
 
 .navbar .nav-top .nav-links .img-link-container img{
     width: 100%;
+
+    opacity: .5;
 }
 
 .navbar .nav-top .nav-links{
@@ -65,19 +71,146 @@ body{
     align-items: center;
     gap: 10px;
 
-    color: white;
+    color: #6d6d6d;
 
     text-decoration: none;
 }
 
 .navbar .nav-top .nav-links li a .link{
     font-weight: 600;
-    font-size: 0.8em;
+    font-size: 0.7em;
 }
 
 .navbar .nav-top #playlist-title{
+    padding: 10px 0;
+
     font-weight: 600;
+    font-size: 0.7em;
+
     color: white;
+}
+
+.navbar .nav-top .playlist{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    list-style-type: none;
+}
+ 
+.navbar .nav-top .playlist li a{
+    font-size: 0.7em;
+    font-weight: 600;
+
+    color: #6d6d6d;
+
+    text-decoration: none;
+}
+
+.navbar .nav-top .playlist #new-playlist a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar .nav-top .playlist #new-playlist{
+
+    font-size: 1.2em;
+}
+
+.navbar .nav-top .playlist #new-playlist .fa-square-plus{
+    font-size: 2.4em;
+}
+
+.nav-bot{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-bot #download{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#download a{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    font-size: 0.8em;
+
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.nav-bot #download .img-link-container{
+    width: 15px;
+}
+
+.nav-bot #download .img-link-container img{
+    width: 100%;
+}
+
+#profile a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    font-size: 0.7em;
+
+    color: #6d6d6d;
+    text-decoration: none;
+}
+
+.nav-bot #profile .img-link-container{
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background-color: #808080;
+}
+
+.nav-bot #profile .img-link-container img{
+    width: 100%;
+}
+
+.nav-bot #profile .name{
+    color: white;
+
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+
+
+
+
+/* Main */
+
+.main{
+    width: calc(100% - 200px);
+}
+
+
+
+
+/* Tool-bar */
+
+.tool-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 90px;
+
+    background-color: #282828;
 }
 
 
