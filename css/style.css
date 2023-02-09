@@ -45,6 +45,14 @@ body{
     margin-bottom: 15px;
 }
 
+.navbar .nav-top #logo-small{
+    display: none;
+
+    width: 12%;
+
+    margin-bottom: 15px;
+}
+
 .navbar .nav-top .nav-links .img-link-container{
     width: 20px;
 }
@@ -451,7 +459,7 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 
     width: 25%;
 }
@@ -564,6 +572,139 @@ body{
     border-radius: 2px;
 
     background-color: white;
+}
+
+
+
+
+/* Media query */
+
+
+
+/* Media query 992px*/
+
+
+@media screen and (max-width: 992px){
+
+    .main .main-inner .main-view .row .cards-container .card{
+        width: calc(100% / 4 - (20px / 4 * 3));
+    }
+
+    .tool-bar #tool-bar-left .icons-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 4px;
+    }      
+}
+
+
+/* Media query 768px*/
+
+
+@media screen and (max-width: 768px){
+    .main .main-inner .main-view .row .cards-container .card{
+        width: calc(100% / 2 - (20px / 2 * 1));
+    }
+
+}
+
+
+/* Media query 576px*/
+
+
+@media screen and (max-width: 576px){
+    
+    .main{
+        width: calc(100% - 50px);
+    }
+    
+    .main .upgrade-bar{
+        left: 50px;
+
+        width: calc(100% - 50px)
+    }
+
+    .navbar{
+        width: 50px;
+    }
+
+    .navbar .nav-top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .nav-top #logo{
+       display: none;
+    }
+    
+    .navbar .nav-top #logo-small{
+        display: block;
+    
+        width: 80%;
+    
+        margin-bottom: 15px;
+    }
+
+    .navbar .nav-top .nav-links li a .link{
+        display: none;
+    }
+
+    .navbar .nav-top .nav-links li a.active::before{
+        left: -14px;
+    }
+
+    .navbar .nav-top #playlist-title{
+        display: none;
+    }
+
+    .navbar .nav-top .playlist{
+        display: none;
+    }
+
+    .navbar .nav-bot{
+        align-items: center;
+    }
+
+    .nav-bot #download .img-link-container{
+        width: 20px;
+    }
+
+    .nav-bot #download .install{
+        display: none;
+    }
+
+    .nav-bot #profile .name{
+        display: none;
+    }
+
+    .nav-bot hr{
+        display: none;
+    }
+
+    .tool-bar{
+        font-size: 0.8em;
+    }
+
+    .tool-bar #tool-bar-left, 
+    .tool-bar #tool-bar-right{
+        max-width: 140px;
+    }
+
+    .tool-bar #tool-bar-center{
+        min-width: 140px;
+    }
+
+    #tool-bar-center .play-bar{
+        gap: 8px;
+    }
+
+    #tool-bar-right{
+        gap: 6px;
+
+        font-size: 0.8em;
+    }
+
 }
 
 
