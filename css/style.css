@@ -71,9 +71,23 @@ body{
     align-items: center;
     gap: 10px;
 
+    position: relative;
+
     color: #6d6d6d;
 
     text-decoration: none;
+}
+
+.navbar .nav-top .nav-links li a.active::before{
+    content: "";
+
+    position: absolute;
+    left: -11px;
+
+    width: 3px;
+    height: 30px;
+
+    background-color: #adff2f;
 }
 
 .navbar .nav-top .nav-links li a .link{
@@ -199,6 +213,8 @@ body{
 /* Main */
 
 .main{
+    position: relative;
+
     width: calc(100% - 200px);
 }
 
@@ -206,14 +222,18 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
 
-    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+
+    padding: 10px;
 
     height: 70px;
+    width: calc(100% - 200px);
 
-    background-color: black;
-    opacity: 0.5;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .main .upgrade-bar .upgrade-btn{
@@ -231,6 +251,127 @@ body{
 
     cursor: pointer;
 }
+
+.main .main-inner{
+    padding-top: 70px;
+
+    height: 100%;
+
+    overflow: auto;
+}
+
+.main .main-inner .library-bar{
+    padding: 15px 0;
+}
+
+
+.main .main-inner .library-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+
+    list-style-type: none;
+}
+
+.main .main-inner .library-bar ul li a{
+    position: relative;
+
+    font-size: 0.8em;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    color: #797c80;
+}
+
+.main .main-inner .library-bar ul li a.active::before{
+    content: "";
+
+    position: absolute;
+    top: 18px;
+    left: 50%;
+
+    transform: translate(-50%);
+
+    width: 30px;
+    height: 2px;
+
+    background-color: #adff2f;
+}
+
+.main .main-inner .main-view{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    padding: 18px;
+}
+
+.main .main-inner .main-view .row .main-view-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+.main .main-inner .main-view .row .main-view-title h3{
+    font-size: 0.7em;
+
+    color: #797c80;
+}
+
+.main .main-inner .main-view .row .cards-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.main .main-inner .main-view .row .cards-container .card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    text-align: center;
+
+    width: calc(100% / 6 - (20px / 6 * 5));
+}
+
+.main .main-inner .main-view .row .cards-container .card img{
+    width: 100%;
+}
+
+.main .main-inner .main-view .row .cards-container .card .circle{
+    border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.main .main-inner .main-view .row .cards-container .card .song-title a{
+    color: white;
+
+    font-weight: 600;
+
+    text-decoration: none;
+}
+
+.main .main-inner .main-view .row .cards-container .card .singer-name a{
+    color: #7a7e81;
+
+    font-weight: 600;
+    font-size: 0.8em;
+
+    text-decoration: none;
+}
+
+
+
+
 
 
 
@@ -424,6 +565,8 @@ body{
 
     background-color: white;
 }
+
+
 
 
 
