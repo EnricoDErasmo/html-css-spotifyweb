@@ -128,7 +128,6 @@ body{
     list-style-type: none;
 }
 
-
 .navbar .nav-top .playlist li a{
     font-size: 0.7em;
     font-weight: 600;
@@ -441,11 +440,6 @@ body{
 
 
 
-
-
-
-
-
 /* Tool-bar */
 
 .tool-bar{
@@ -645,8 +639,6 @@ body{
     cursor: pointer;
 }
 
-
-
 #tool-bar-right .time-line-container .time-line{
     display: flex;
     flex-direction: row;
@@ -682,6 +674,9 @@ body{
 #tool-bar-right .time-line-container:hover .time-line i{
     display: block;
 }
+
+
+
 
 
 
